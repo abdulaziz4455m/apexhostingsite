@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --text-primary: #0a0e1a;
+    --text-secondary: #475569;
+    --brand-blue: #00208b;
+    --brand-blue-hover: #001768;
+    --brand-blue-light: #f0f4ff;
+    --brand-red: #ff3a18;
+    --brand-red-hover: #e02e0e;
+    --card-border: #e2e8f0;
+    --card-bg: #ffffff;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0a0e1a;
+    font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Red underline link style */
+.red-underline-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #0a0e1a;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.red-underline-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff3a18;
+  transition: transform 0.2s ease;
+}
+
+.red-underline-link:hover::after {
+  transform: scaleX(1.1);
+}
+
+/* 3D and Motion Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Smooth continuous floating animations */
+@keyframes floatY1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.5deg);
+  }
+}
+
+@keyframes floatY2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-1deg);
+  }
+}
+
+@keyframes floatY3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 10px rgba(255, 69, 26, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 22px rgba(255, 69, 26, 0.85));
+  }
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25) rotate(45deg);
+  }
+}
+
+@keyframes waveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float-1 {
+  animation: floatY1 6s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: floatY2 7.5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: floatY3 6.8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-slow-spin {
+  animation: slowSpin 25s linear infinite;
+}
+
+.animate-sparkle {
+  animation: sparkleTwinkle 3s ease-in-out infinite;
+}
+
+.wave-bg-animated {
+  background: linear-gradient(135deg, #001f9c 0%, #001360 40%, #0028ba 70%, #001048 100%);
+  background-size: 200% 200%;
+  animation: waveGradient 16s ease infinite;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
