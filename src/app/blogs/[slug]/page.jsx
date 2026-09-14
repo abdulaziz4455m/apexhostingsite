@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Calendar, ArrowLeft, Clock, Shield, CheckCircle, Share2, BookOpen } from "lucide-react";
@@ -154,7 +154,6 @@ export default async function BlogPostPage({ params }) {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

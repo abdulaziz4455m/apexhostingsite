@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { Users, TrendingUp, DollarSign, ShieldCheck, ArrowRight, CheckCircle2 } from "lucide-react";
@@ -106,7 +106,6 @@ export default function PartnerProgramPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

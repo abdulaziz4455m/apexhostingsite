@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { Shield, Printer, Globe, Database, HardDrive, Cpu, Zap, ArrowRight } from "lucide-react";
 
@@ -141,7 +141,6 @@ export default function AddOnsPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

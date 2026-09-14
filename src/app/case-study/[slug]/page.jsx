@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -130,7 +130,6 @@ export default async function CaseStudyDetailPage({ params }) {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
 import { siteMetadata } from "@/data/siteData";
@@ -101,7 +101,6 @@ export default function ContactPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

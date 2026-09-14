@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { Calendar, Clock, Tag, Search, ArrowRight } from "lucide-react";
 import { allBlogArticles } from "@/data/sitemapData";
@@ -141,7 +141,6 @@ export default function BlogsPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

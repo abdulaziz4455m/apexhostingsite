@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { Star, Building2, Quote, CheckCircle2 } from "lucide-react";
@@ -125,7 +125,6 @@ export default function TestimonialsPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

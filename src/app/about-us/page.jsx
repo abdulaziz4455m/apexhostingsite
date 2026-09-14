@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Star, Shield, Award, CheckCircle, FileText, Globe } from "lucide-react";
 
@@ -461,7 +461,6 @@ export default function AboutPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

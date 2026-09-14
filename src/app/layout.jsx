@@ -12,12 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ApexHostPro | Secure, Cost-Effective & Reliable Oracle APEX Cloud Hosting",
-  description: "Build enterprise applications faster with Oracle APEX 26.1. Fully managed Oracle APEX hosting, ApexProtect Linux server security, ApexPrint reporting, and multi-cloud migration.",
+  title: "ApexHostPro | Pakistan's #1 Oracle APEX Cloud Hosting",
+  description: "Enterprise Oracle APEX Cloud Hosting in Pakistan. High performance, 99.99% uptime, 24/7 DBA support, and local PKR billing with Raast and Bank Transfer.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   }
 };
 

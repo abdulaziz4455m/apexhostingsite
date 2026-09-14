@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { Plus, Minus, Search, HelpCircle, MessageSquare } from "lucide-react";
 
@@ -150,7 +150,6 @@ export default function FAQsPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

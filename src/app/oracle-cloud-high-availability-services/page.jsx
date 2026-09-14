@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { ShieldAlert, Server, Activity, ArrowRight, CheckCircle2, Lock } from "lucide-react";
@@ -72,7 +72,6 @@ export default function HighAvailabilityPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

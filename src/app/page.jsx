@@ -5,7 +5,6 @@ import MaxPrintSection from "@/components/MaxPrintSection";
 import MaxProtectSection from "@/components/MaxProtectSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
 
 export default function Home() {
   return (
@@ -36,8 +35,6 @@ export default function Home() {
       {/* Clean Footer */}
       <Footer />
 
-      {/* Floating Side Widgets (< SCHEDULE ONLINE MEETING & Online Red Pill) */}
-      <FloatingSideWidgets />
     </div>
   );
 }

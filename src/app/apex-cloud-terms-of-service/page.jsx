@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 
 export const metadata = {
   title: "Terms of Service | ApexHostPro Cloud Hosting",
@@ -66,7 +66,6 @@ export default function TermsOfServicePage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

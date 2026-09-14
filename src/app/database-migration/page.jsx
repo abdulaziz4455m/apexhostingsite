@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { ArrowRight, Database, RefreshCw, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
@@ -112,7 +112,6 @@ export default function DatabaseMigrationPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import { ShieldCheck, Lock, Globe } from "lucide-react";
 
 export const metadata = {
@@ -74,7 +74,6 @@ export default function PrivacyPolicyPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

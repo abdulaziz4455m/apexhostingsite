@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Building2, TrendingUp } from "lucide-react";
 import { caseStudiesList } from "@/data/sitemapData";
@@ -106,7 +106,6 @@ export default function CaseStudiesPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

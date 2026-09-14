@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingSideWidgets from "@/components/FloatingSideWidgets";
+
 import Link from "next/link";
 import { Move, Check } from "lucide-react";
 import { apexPrintData } from "@/data/siteData";
@@ -73,7 +73,6 @@ export default function ApexPrintPage() {
       </main>
 
       <Footer />
-      <FloatingSideWidgets />
     </div>
   );
 }

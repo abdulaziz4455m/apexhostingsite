@@ -201,7 +201,7 @@ export default function ScheduleModal({ isOpen, onClose }) {
               <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
                 <a href="tel:+17186184560" className="flex items-center gap-1.5 hover:text-white transition-colors">
                   <Phone className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>+1 718 618 4560</span>
+                  <span>+92 304 8106662</span>
                 </a>
                 <a href={`mailto:${siteMetadata.salesEmail}`} className="flex items-center gap-1.5 hover:text-white transition-colors">
                   <Mail className="w-3.5 h-3.5 text-cyan-400" />

@@ -1,17 +1,48 @@
 "use client";
 
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React, { useState } from "react";
 import { CheckCircle2, MessageSquare, Phone } from "lucide-react";
 import { siteMetadata } from "@/data/siteData";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("xwlkgwbv");
+  const [status, setStatus] = useState("idle"); // 'idle', 'submitting', 'succeeded', 'error'
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("submitting");
+    setErrorMessage("");
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formspree.io/f/xwlkgwbv", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus("succeeded");
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(errorData.error || "Submission failed. Please contact us via WhatsApp.");
+        setStatus("error");
+      }
+    } catch (err) {
+      setErrorMessage("Network error. Please contact us via WhatsApp.");
+      setStatus("error");
+    }
+  };
 
   return (
     <div className="rounded-[40px] bg-[#001060] p-4 sm:p-8 lg:p-14 shadow-2xl relative">
       
-      {/* 4-Point Red Star Sparkle on top center of inner white card (Matching Screenshot 2) */}
+      {/* 4-Point Red Star Sparkle on top center of inner white card */}
       <div className="relative max-w-6xl mx-auto">
         <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20 text-[#ff3a18] drop-shadow-[0_0_12px_rgba(255,58,24,0.7)] pointer-events-none">
           <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,18 +52,21 @@ export default function ContactForm() {
           </svg>
         </div>
 
-        {/* Pure White Card (Matching Screenshot 2) */}
+        {/* Pure White Card */}
         <div className="rounded-[36px] bg-white p-8 sm:p-12 lg:p-16 shadow-[0_20px_60px_rgba(0,0,0,0.2)]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             {/* Left Column: Heading & Description */}
             <div className="lg:col-span-5 space-y-4">
+              <span className="text-[11px] font-black tracking-widest text-[#ff3a18] uppercase">
+                GET IN TOUCH
+              </span>
               <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 Let’s discuss something great with us
               </h3>
 
               <p className="text-sm text-slate-600 leading-relaxed font-normal">
-                We emphasize personalized customer support and we are available to assist with inquiries or support needs via contact form or email during business days. Our aim is to respond within 24 hours. Chat support is available Monday through Friday.
+                We emphasize personalized customer support in Pakistan and globally. Inquire about hosting, migrations, or custom architecture. Our certified Oracle DBAs respond within 24 hours.
               </p>
 
               {/* Instant WhatsApp Quick Connect */}
@@ -65,14 +99,14 @@ export default function ContactForm() {
 
             {/* Right Column: Formspree (xwlkgwbv) Form */}
             <div className="lg:col-span-7">
-              {state.succeeded ? (
+              {status === "succeeded" ? (
                 <div className="p-8 sm:p-10 rounded-[28px] bg-emerald-50 border border-emerald-200 text-center space-y-3 animate-in fade-in duration-300">
                   <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-sm">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Thanks for joining!</h4>
                   <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                    Your inquiry has been received! Our Oracle APEX engineering team will review your requirements and respond within 24 hours.
+                    Your message has been successfully received via Formspree! Our Oracle APEX engineering team will review your requirements and respond promptly.
                   </p>
                   <div className="pt-2">
                     <a
@@ -88,6 +122,12 @@ export default function ContactForm() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {errorMessage && (
+                    <div className="p-3.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-bold">
+                      {errorMessage}
+                    </div>
+                  )}
+
                   {/* Full Name */}
                   <div>
                     <input
@@ -98,7 +138,6 @@ export default function ContactForm() {
                       placeholder="Full Name"
                       className="w-full px-5 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#00208b] transition-colors"
                     />
-                    <ValidationError prefix="Name" field="name" errors={state.errors} className="text-xs text-red-500 mt-1" />
                   </div>
 
                   {/* Email */}
@@ -108,10 +147,9 @@ export default function ContactForm() {
                       type="email"
                       name="email"
                       required
-                      placeholder="Email"
+                      placeholder="Email Address"
                       className="w-full px-5 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#00208b] transition-colors"
                     />
-                    <ValidationError prefix="Email" field="email" errors={state.errors} className="text-xs text-red-500 mt-1" />
                   </div>
 
                   {/* Subject */}
@@ -121,13 +159,12 @@ export default function ContactForm() {
                       type="text"
                       name="subject"
                       required
-                      placeholder="Subject"
+                      placeholder="Subject (e.g. DedicatedDB, Migration, APEX 26.1)"
                       className="w-full px-5 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#00208b] transition-colors"
                     />
-                    <ValidationError prefix="Subject" field="subject" errors={state.errors} className="text-xs text-red-500 mt-1" />
                   </div>
 
-                  {/* Message (What can we help you with?) */}
+                  {/* Message */}
                   <div>
                     <textarea
                       id="message"
@@ -137,17 +174,16 @@ export default function ContactForm() {
                       placeholder="What can we help you with?"
                       className="w-full px-5 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#00208b] transition-colors resize-none"
                     />
-                    <ValidationError prefix="Message" field="message" errors={state.errors} className="text-xs text-red-500 mt-1" />
                   </div>
 
-                  {/* Submit Button (Screenshot 2 style) */}
+                  {/* Submit Button */}
                   <div className="pt-2 flex items-center justify-between">
                     <button
                       type="submit"
-                      disabled={state.submitting}
+                      disabled={status === "submitting"}
                       className="px-10 py-3.5 rounded-2xl bg-[#00084d] hover:bg-[#00147a] text-white font-black text-xs uppercase tracking-wider transition-all shadow-md hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
                     >
-                      <span>{state.submitting ? "SUBMITTING..." : "SUBMIT"}</span>
+                      <span>{status === "submitting" ? "SUBMITTING..." : "SUBMIT"}</span>
                     </button>
 
                     <a
