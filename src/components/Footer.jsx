@@ -70,7 +70,7 @@ export default function Footer({ theme = "blue" }) {
               <li><Link href="/apex-shared-hosting" className="hover:text-[#ff3a18] transition-colors">Shared Hosting (from Rs. 3,900)</Link></li>
               <li><Link href="/apex-dedicated-hosting" className="hover:text-[#ff3a18] transition-colors">DedicatedDB (from Rs. 23,500)</Link></li>
               <li><Link href="/oracle-apex-clouddb" className="hover:text-[#ff3a18] transition-colors">CloudDB High Availability</Link></li>
-              <li><Link href="/maxapex-add-ons" className="hover:text-[#ff3a18] transition-colors">Hosting Add-ons</Link></li>
+              <li><Link href="/ApexHost-add-ons" className="hover:text-[#ff3a18] transition-colors">Hosting Add-ons</Link></li>
               <li><Link href="/pricing" className="hover:text-[#ff3a18] transition-colors">Pricing in PKR</Link></li>
             </ul>
           </div>

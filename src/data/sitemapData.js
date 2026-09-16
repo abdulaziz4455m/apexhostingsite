@@ -112,7 +112,7 @@ export const allBlogArticles = [
     readTime: "9 min read"
   },
   {
-    slug: "maxapex-your-one-stop-solution-for-high-performance-oracle-apex-hosting",
+    slug: "ApexHost-your-one-stop-solution-for-high-performance-oracle-apex-hosting",
     title: "ApexHostPro: Your One-Stop Solution for High-Performance Oracle APEX Hosting",
     date: "April 2026",
     category: "Cloud Hosting",
@@ -264,7 +264,7 @@ export const allBlogArticles = [
     readTime: "6 min read"
   },
   {
-    slug: "apex-hosting-matters-maxapex-adds-servers-in-germany-and-finland",
+    slug: "apex-hosting-matters-ApexHost-adds-servers-in-germany-and-finland",
     title: "Apex Hosting Matters: Expanding Data Centers in Germany and Finland",
     date: "April 2026",
     category: "Infrastructure",
@@ -387,7 +387,7 @@ export const allBlogArticles = [
 
 export const caseStudiesList = [
   {
-    slug: "maxapex-cor-ld-global-liver-research-infrastructure",
+    slug: "ApexHost-cor-ld-global-liver-research-infrastructure",
     altSlug: "cor-ld-global-liver-research-infrastructure",
     title: "Global Liver Research Infrastructure on CloudDB",
     client: "COR-LD Consortium",
@@ -404,7 +404,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "maxapex-clouddb-gbi-solutions-case-study",
+    slug: "ApexHost-clouddb-gbi-solutions-case-study",
     altSlug: "gbi-solutions-case-study",
     title: "GBI Solutions: Scaling Enterprise ERP on CloudDB",
     client: "GBI Solutions",
@@ -421,7 +421,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "habbatech-maxapex-dedicateddb-oracle-apex-case-study",
+    slug: "habbatech-ApexHost-dedicateddb-oracle-apex-case-study",
     altSlug: "habbatech-dedicateddb-case-study",
     title: "Habbatech: DedicatedDB Performance Transformation",
     client: "Habbatech Systems",
@@ -438,7 +438,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "oneifreight-logistics-saas-maxapex-shared-hosting",
+    slug: "oneifreight-logistics-saas-ApexHost-shared-hosting",
     altSlug: "oneifreight-logistics-saas",
     title: "OneiFreight Logistics SaaS on APEX Shared Hosting",
     client: "OneiFreight Logistics",
@@ -455,7 +455,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "fastek-scales-saas-maxapex",
+    slug: "fastek-scales-saas-ApexHost",
     altSlug: "fastek-scales-saas",
     title: "Fastek Scales Multi-Tenant SaaS with ApexHostPro",
     client: "Fastek Technologies",
@@ -472,7 +472,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "rmk-maxapex-dedicateddb",
+    slug: "rmk-ApexHost-dedicateddb",
     altSlug: "rmk-dedicateddb",
     title: "RMK Group: DedicatedDB Consolidation & Hardening",
     client: "RMK Conglomerate",
@@ -489,7 +489,7 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "maxapex-hadif-it-modernization",
+    slug: "ApexHost-hadif-it-modernization",
     altSlug: "hadif-it-modernization",
     title: "Hadif IT: Legacy APEX 5 to APEX 26.1 Modernization",
     client: "Hadif Information Tech",
@@ -506,8 +506,8 @@ export const caseStudiesList = [
     ]
   },
   {
-    slug: "how-maxapex-helps-sotful-scale-enterprise-apps",
-    altSlug: "how-maxapex-helps-sotful-scale",
+    slug: "how-ApexHost-helps-sotful-scale-enterprise-apps",
+    altSlug: "how-ApexHost-helps-sotful-scale",
     title: "Scaling Sotful Mobile API Infrastructure on ORDS",
     client: "Sotful Inc.",
     industry: "Mobile Applications",
@@ -561,7 +561,7 @@ export const allSitePages = [
   { url: "/mobile-app-automation-estimate", title: "Mobile App & APEX Automation Cost Calculator", changefreq: "weekly", priority: "0.8" },
   { url: "/apexprotect", title: "ApexProtect 24/7 Managed Security & SOC", changefreq: "weekly", priority: "0.8" },
   { url: "/apexprint", title: "ApexPrint Professional PDF & Document Reporting", changefreq: "weekly", priority: "0.8" },
-  { url: "/maxapex-add-ons", title: "APEX Hosting Add-ons, SSL & Storage", changefreq: "weekly", priority: "0.7" },
+  { url: "/ApexHost-add-ons", title: "APEX Hosting Add-ons, SSL & Storage", changefreq: "weekly", priority: "0.7" },
   { url: "/complete-onpremise-support", title: "Complete On-Premise Support & DBA Services", changefreq: "weekly", priority: "0.8" },
   { url: "/case-study", title: "Client Case Studies & Success Stories", changefreq: "weekly", priority: "0.8" },
   { url: "/testimonials", title: "Client Testimonials & Reviews", changefreq: "weekly", priority: "0.7" },

@@ -32,7 +32,7 @@ export default function MaxAIChatWidget({ onOpenScheduleModal }) {
     "Is Oracle APEX 26.1 ready with AI vibe coding?",
     "What makes MaxProtect different from standard firewalls?",
     "Can I connect SQL Developer and VS Code?",
-    "How fast is MaxAPEX customer support?"
+    "How fast is ApexHost customer support?"
   ];
 
   const handleSend = (questionText) => {
@@ -69,9 +69,9 @@ export default function MaxAIChatWidget({ onOpenScheduleModal }) {
         if (lowerQ.includes("maxprint") || lowerQ.includes("report") || lowerQ.includes("pdf")) {
           matchedAnswer = "MaxPrint is our native Oracle APEX reporting tool featuring a drag-and-drop template designer. It lets you generate pixel-perfect PDFs, Excel sheets, and Word documents in sub-second speeds without messy BI Publisher scripts!";
         } else if (lowerQ.includes("oci") || lowerQ.includes("migrate") || lowerQ.includes("cloud")) {
-          matchedAnswer = "MaxAPEX specializes in seamless migration from On-Premises to Oracle Cloud Infrastructure (OCI), AWS, and Azure. We handle architecture sizing, Data Guard failover, and zero-downtime replication.";
+          matchedAnswer = "ApexHost specializes in seamless migration from On-Premises to Oracle Cloud Infrastructure (OCI), AWS, and Azure. We handle architecture sizing, Data Guard failover, and zero-downtime replication.";
         } else {
-          matchedAnswer = "Thanks for asking! MaxAPEX provides managed Oracle APEX 26.1 hosting across Shared, DedicatedDB, and CloudDB tiers. Our team offers 24/7 support with under 15-minute response times. Would you like to schedule an online meeting with our lead architect?";
+          matchedAnswer = "Thanks for asking! ApexHost provides managed Oracle APEX 26.1 hosting across Shared, DedicatedDB, and CloudDB tiers. Our team offers 24/7 support with under 15-minute response times. Would you like to schedule an online meeting with our lead architect?";
         }
       }
 

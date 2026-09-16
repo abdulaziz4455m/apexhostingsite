@@ -159,7 +159,7 @@ export default function CloudServicesPage() {
 
                 <div className="pt-2">
                   <a
-                    href="https://meet.brevo.com/maxapex-cloud/maxapex"
+                    href="https://meet.brevo.com/ApexHost-cloud/ApexHost"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="red-underline-link text-xs font-black uppercase tracking-wider"

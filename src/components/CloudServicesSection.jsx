@@ -106,7 +106,7 @@ export default function CloudServicesSection({ onOpenScheduleModal }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-md shadow-red-600/25 transition-all"
                 >
-                  <span>Discover MaxAPEX Cloud Services</span>
+                  <span>Discover ApexHost Cloud Services</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
 
@@ -146,7 +146,7 @@ export default function CloudServicesSection({ onOpenScheduleModal }) {
                   <div className="p-3 rounded-xl bg-slate-900 border border-red-500/30 flex items-center justify-between">
                     <div>
                       <div className="text-[10px] text-red-400 uppercase font-bold">Step 2: Managed Modernization</div>
-                      <div className="text-white font-semibold text-xs mt-0.5">MaxAPEX Cloud Infrastructure</div>
+                      <div className="text-white font-semibold text-xs mt-0.5">ApexHost Cloud Infrastructure</div>
                     </div>
                     <Zap className="w-4 h-4 text-red-400" />
                   </div>

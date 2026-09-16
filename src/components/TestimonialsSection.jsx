@@ -22,7 +22,7 @@ export default function TestimonialsSection() {
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               From global financial institutions and logistics enterprises to independent APEX consulting teams, 
-              discover how MaxAPEX powers mission-critical Oracle applications.
+              discover how ApexHost powers mission-critical Oracle applications.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
 
             {/* Trustpilot Badge */}
             <a
-              href="https://www.trustpilot.com/review/maxapex.com"
+              href="https://www.trustpilot.com/review/ApexHost.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3.5 rounded-2xl bg-slate-900 border border-white/10 hover:border-white/20 transition-all flex items-center gap-3 group"
@@ -113,12 +113,12 @@ export default function TestimonialsSection() {
         {/* View More Testimonials Link */}
         <div className="mt-10 text-center">
           <a
-            href="https://www.maxapex.com/testimonials/"
+            href="https://www.ApexHost.com/testimonials/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs font-bold text-slate-300 hover:text-cyan-400 transition-colors inline-flex items-center gap-1.5"
           >
-            <span>Read all client stories on MaxAPEX.com</span>
+            <span>Read all client stories on ApexHost.com</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

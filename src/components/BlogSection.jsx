@@ -29,7 +29,7 @@ export default function BlogSection() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              Latest from the MaxAPEX Engineering Blog
+              Latest from the ApexHost Engineering Blog
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -38,7 +38,7 @@ export default function BlogSection() {
           </div>
 
           <a
-            href="https://www.maxapex.com/blogs/"
+            href="https://www.ApexHost.com/blogs/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 border border-white/10 transition-colors shrink-0"
@@ -168,7 +168,7 @@ export default function BlogSection() {
                 rel="noopener noreferrer"
                 className="px-5 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-red-600 to-rose-600 flex items-center gap-1.5"
               >
-                <span>Read Full Guide on MaxAPEX</span>
+                <span>Read Full Guide on ApexHost</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>

@@ -97,7 +97,7 @@ export default function EventsWebinarsPage() {
 
                 <div className="pt-2">
                   <a
-                    href="https://meet.brevo.com/maxapex-cloud/maxapex"
+                    href="https://meet.brevo.com/ApexHost-cloud/ApexHost"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs font-black text-[#ff3a18] hover:text-[#e02e0e] uppercase tracking-wider"
