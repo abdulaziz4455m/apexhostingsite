@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { CheckCircle2, MessageSquare, Phone } from "lucide-react";
 import { siteMetadata } from "@/data/siteData";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("idle"); // 'idle', 'submitting', 'succeeded', 'error'
   const [errorMessage, setErrorMessage] = useState("");
+
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,6 +31,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         setStatus("succeeded");
+        router.push('/thank-you');
       } else {
         const errorData = await response.json();
         setErrorMessage(errorData.error || "Submission failed. Please contact us via WhatsApp.");

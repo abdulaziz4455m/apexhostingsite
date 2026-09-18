@@ -6,6 +6,11 @@ import MaxProtectSection from "@/components/MaxProtectSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "Home",
+  description: "Enterprise Oracle APEX Cloud Hosting in Pakistan. High performance, 99.99% uptime, and local PKR billing.",
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-900 flex flex-col selection:bg-[#ff3a18] selection:text-white">

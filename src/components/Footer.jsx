@@ -130,7 +130,7 @@ export default function Footer({ theme = "blue" }) {
           </div>
           <div className="flex gap-4 mt-2 sm:mt-0 font-medium">
             <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
-            <Link href="/apex-cloud-terms-of-service" className="hover:underline">Terms of Service</Link>
+            <Link href="/terms" className="hover:underline">Terms of Service</Link>
             <Link href="/service-level-agreement" className="hover:underline">99.99% SLA</Link>
             <Link href="/partner-program" className="hover:underline">Partner Program</Link>
           </div>
