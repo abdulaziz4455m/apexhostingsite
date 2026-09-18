@@ -25,6 +25,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${study.title} | Case Study | ApexHostPro`,
     description: study.summary,
+    alternates: {
+      canonical: `/case-study/${study.slug}`
+    }
   };
 }
 

@@ -15,6 +15,17 @@ const nextConfig = {
     optimizeCss: true, // Requires external critters package (if you install it later)
     scrollRestoration: true,
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.apexhostpro.com' }],
+        destination: 'https://apexhostpro.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
